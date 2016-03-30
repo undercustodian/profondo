@@ -21,7 +21,7 @@
               <nav>
                  <ul>
                     {% for iten in page.menu %}
-                       <li><a href="{{iten[1]}}">{{iten[0]}}</a></li>
+                       <li><a href="{{ site.github.url }}/{{iten[1]}}">{{iten[0]}}</a></li>
                     {% endfor %}
                  </ul>
               </nav>
@@ -40,7 +40,7 @@
                 <li>tuiter</li>
 		{% if page.aside %}
 		    {% for iten in page.aside %}
-                       <li><a href="{{ site.github.url }}/profondo/{{iten[1]}}">{{iten[0]}}</a></li>
+                       <li><a href="{{ site.github.url }}/{{iten[1]}}">{{iten[0]}}</a></li>
                     {% endfor %}
 		{% endif %}
 
