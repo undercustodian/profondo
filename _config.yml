@@ -4,6 +4,8 @@ markdown: kramdown
 future: false
 sass:
     style: compressed
+ 
+gems:           ['jekyll-paginate', 'jekyll-multiple-languages']
 
 languages:          ['it']
 language_default:   'it'
