@@ -1,0 +1,9 @@
+pygments: true
+# markdown: rdiscount
+markdown: kramdown
+future: false
+sass:
+    style: compressed
+
+languages:          ['it']
+language_default:   'it'

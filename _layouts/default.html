@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+   <head>
+      <meta charset="utf-8">
+
+
+
+
+
+
+         <link rel="stylesheet" href="/css/main.css">
+         <title>{{page.title}}</title>
+   </head>
+   <body>
+      <div id="environment"><h1 id="from">{{page.environment}}</h1></div>
+      <header>
+       <!-- <h1 id="from">{{page.container}}</h1> -->
+
+	   {% if page.menu %}
+              <nav>
+                 <ul>
+                    {% for iten in page.menu %}
+                       <li><a href="{{iten[1]}}">{{iten[0]}}</a></li>
+                    {% endfor %}
+                 </ul>
+              </nav>
+	   {% endif %}
+    </header>
+    <div id="{{page.container}}" class="container">
+          {{ content }}
+    </div>
+    <aside>
+       <img src="/images/logo.png" alt="Logo" />
+       <h1>Organizazione</h1>
+          <nav>
+             <h2>scopo</h2>
+             <ul>
+                <li>facebook</li>
+                <li>tuiter</li>
+		{% if page.aside %}
+		    {% for iten in page.aside %}
+                       <li><a href="{{iten[1]}}">{{iten[0]}}</a></li>
+                    {% endfor %}
+		{% endif %}
+
+
+             </ul>
+         </nav>
+         <section>
+            <h2>sponsor</h2>
+               [immagini pubblicitarie]
+         </section>
+      </aside>
+   </body>
+</html>

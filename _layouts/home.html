@@ -1,0 +1,14 @@
+---
+title: Cappuccetto rosso
+environment: "Home -> Post"
+menu: [["blog", "blog"],["eventi","eventi"],["info","info"]]
+license: Company 2016
+project_name: "profondo"
+layout: default
+---
+
+{% for post in site.categories.blog %}
+	{% include osts_generator.html %}
+{% endfor %}
+
+

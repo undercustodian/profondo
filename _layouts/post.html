@@ -1,0 +1,21 @@
+--- 
+categories: home
+layout: default
+---
+
+<div class="paper">
+   <h1>{{ page.title }}</h1>
+   <span class="post-date">
+      {{ page.date | date_to_long_string }}
+   </span>
+
+   {% if page.snapshot %}
+   	<div class="snapshot">
+         <img src="/img/projects/{{ page.snapshot }}.png">
+      	</div>
+   {% endif %}
+
+   {{ content }}
+
+</div>
+
