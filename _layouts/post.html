@@ -1,5 +1,6 @@
 --- 
 categories: home
+root: /
 layout: default
 ---
 
@@ -11,7 +12,7 @@ layout: default
 
    {% if page.snapshot %}
    	<div class="snapshot">
-         <img src="/img/projects/{{ page.snapshot }}.png">
+         <img src="{{ root }}/img/projects/{{ page.snapshot }}.png">
       	</div>
    {% endif %}
 

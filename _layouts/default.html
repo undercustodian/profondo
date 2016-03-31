@@ -9,7 +9,7 @@
 
 
 
-         <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
+         <link rel="stylesheet" href="{{ root }}/css/main.css">
          <title>{{page.title}}</title>
    </head>
    <body>
@@ -21,7 +21,7 @@
               <nav>
                  <ul>
                     {% for iten in page.menu %}
-                       <li><a href="{{ site.github.url }}/{{iten[1]}}">{{iten[0]}}</a></li>
+                       <li><a href="{{ root }}/{{iten[1]}}">{{iten[0]}}</a></li>
                     {% endfor %}
                  </ul>
               </nav>
@@ -31,7 +31,7 @@
           {{ content }}
     </div>
     <aside>
-       <img src="{{ site.github.url }}/images/logo.png" alt="Logo" />
+       <img src="{{ root }}/images/logo.png" alt="Logo" />
        <h1>Organizazione</h1>
           <nav>
              <h2>scopo</h2>
@@ -40,7 +40,7 @@
                 <li>tuiter</li>
 		{% if page.aside %}
 		    {% for iten in page.aside %}
-                       <li><a href="{{ site.github.url }}/{{iten[1]}}">{{iten[0]}}</a></li>
+                       <li><a href="{{ root }}/{{iten[1]}}">{{iten[0]}}</a></li>
                     {% endfor %}
 		{% endif %}
 
