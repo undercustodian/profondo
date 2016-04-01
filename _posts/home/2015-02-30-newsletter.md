@@ -4,9 +4,10 @@ category: "home"
 title: "Cappuccetto Rosso Fiaba"
 environment: "Home -> post: "
 menu: [["Quando", "#quando"],["Dove","#dove"],["info","#info"]]
-aside: [[ "Home", "/index.html"],["blog", "blog"],["eventi","eventi"],["info","info"]]
+aside: [[ "Home", "index.html"],["blog", "blog"],["eventi","eventi"],["info","info"]]
 license: Company 2016
 project_name: "profondo"
+root: ../
 author: "grimmstories.com"
 ---
 

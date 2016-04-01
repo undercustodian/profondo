@@ -1,6 +1,6 @@
 --- 
 categories: home
-root: {{ site.github.url }}
+aside: [[ "Home", "index.html"],["blog", "blog"],["eventi","eventi"],["info","info"]]
 layout: default
 ---
 
@@ -12,7 +12,7 @@ layout: default
 
    {% if page.snapshot %}
    	<div class="snapshot">
-		<img src="{{ site.github.url }}/img/projects/{{ page.snapshot }}.png">
+		<img src="{{ base }}/img/projects/{{ page.snapshot }}.png">
       	</div>
    {% endif %}
 
